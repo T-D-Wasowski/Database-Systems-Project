@@ -1,0 +1,30 @@
+Relationships
+
+1. Offer optional,or Grad_Scheme, Job, Placement - Generalisation {Optional, Or}
+2. Event optional,and Presentation, Job_Fair - Generalisation {Optional, And}
+3. Student optional Graduate - Generalisaiton {Optional}
+
+4. Staff 0..* takes part in 0..* Event - Many to Many
+5. Consultant 1..* is allocated 0..* Event - Many to Many
+6. Job 1..* is advertised at 0..* Job_Fair - Many to Many
+7. Graduate 0..* attends 0..* Presentation - Many to Many
+
+8. Support_Session 0..1 assists with 1..1 Application - One to One (Optional one side)
+
+9. Company 1..1 proposes 0..* Offer - One to Many
+10. Company 1..1 employs 0..* Staff - One to Many
+11. Grad_Scheme 1..1 is presented at 0..* Presentation - One to Many
+12. Student 1..1 places 0..* Application - One to Many
+13. Application 1..1 leads to 0..* Interview - One to Many
+14. Application 0..* is for 1..1 Offer - One to Many
+15. Consultant 1..1 provides 0..* Support_Session - One to Many
+16. Consultant 1..1 is assigned 0..* Offer - One to Many
+
+17. Consultant 0..1 mentors 0..* Consultant - One to Many (Recursive)
+
+
+
+
+
+
+
